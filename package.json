@@ -15,6 +15,8 @@
   "scripts": {
     "test": "node separate-type-imports.test",
     "lint": "eslint  .",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
     "lint:fix": "eslint --fix .",
     "check": "tsc"
   },
@@ -29,8 +31,11 @@
     "@types/node": "^25.3.3",
     "eslint": "^10.0.2",
     "eslint-plugin-eslint-plugin": "^7.3.1",
+    "eslint-plugin-perfectionist": "5.6.0",
+    "eslint-plugin-unicorn": "63.0.0",
     "eslint-plugin-n": "^17.24.0",
     "globals": "^17.3.0",
+    "prettier": "^3.8.1",
     "typescript": "^5.9.3",
     "typescript-eslint": "8.56.1"
   },

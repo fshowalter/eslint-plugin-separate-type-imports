@@ -1,18 +1,19 @@
-import fs from "fs";
+import fs from "node:fs";
+
 import separateTypeImports from "./separate-type-imports.js";
 
 const pkg = JSON.parse(
-  fs.readFileSync(new URL("./package.json", import.meta.url), "utf8"),
+  fs.readFileSync(new URL("package.json", import.meta.url), "utf8"),
 );
 
 const plugin = {
   // preferred location of name and version
+  configs: {},
   meta: {
     name: pkg.name,
-    version: pkg.version,
     namespace: "separate-type-imports",
+    version: pkg.version,
   },
-  configs: {},
   rules: {
     "separate-type-imports": separateTypeImports,
   },
