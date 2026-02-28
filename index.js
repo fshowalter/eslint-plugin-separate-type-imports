@@ -22,6 +22,9 @@ const plugin = {
 Object.assign(plugin.configs, {
   recommended: [
     {
+      plugins: {
+        "separate-type-imports": plugin,
+      },
       rules: {
         "separate-type-imports/separate-type-imports": "error",
       },
