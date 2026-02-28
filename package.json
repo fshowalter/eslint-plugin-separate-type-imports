@@ -1,0 +1,44 @@
+{
+  "name": "eslint-plugin-separate-type-imports",
+  "version": "1.0.0",
+  "description": "ESLint rule to enforce separate type imports.",
+  "homepage": "https://github.com/fshowalter/eslint-plugin-separate-type-imports#readme",
+  "bugs": {
+    "url": "https://github.com/fshowalter/eslint-plugin-separate-type-imports/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fshowalter/eslint-plugin-separate-type-imports.git"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node separate-type-imports.test",
+    "lint": "eslint  .",
+    "lint:fix": "eslint --fix .",
+    "check": "tsc"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/estree": "1.0.8",
+    "@types/node": "^25.3.3",
+    "eslint": "^10.0.2",
+    "eslint-plugin-eslint-plugin": "^7.3.1",
+    "eslint-plugin-n": "^17.24.0",
+    "globals": "^17.3.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "8.56.1"
+  },
+  "peerDependencies": {
+    "eslint": "^9.0.0 || ^10.0.0"
+  },
+  "files": [
+    "index.js",
+    "separate-type-imports.js"
+  ]
+}
