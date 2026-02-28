@@ -23,7 +23,7 @@ Object.assign(plugin.configs, {
   recommended: [
     {
       rules: {
-        "separate-type-imports": "error",
+        "separate-type-imports/separate-type-imports": "error",
       },
     },
   ],
