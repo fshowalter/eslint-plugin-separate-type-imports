@@ -10,5 +10,11 @@
     "schedule": ["at any time"]
   },
   "postUpdateOptions": ["npmDedupe"],
-  "automerge": true
+  "automerge": true,
+  "packageRules": [
+    {
+      "depTypeList": ["peerDependencies"],
+      "enabled": false
+    }
+  ]
 }
