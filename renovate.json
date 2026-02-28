@@ -13,7 +13,7 @@
   "automerge": true,
   "packageRules": [
     {
-      "depTypeList": ["peerDependencies"],
+      "matchDepTypes": ["peerDependencies"],
       "enabled": false
     }
   ]
