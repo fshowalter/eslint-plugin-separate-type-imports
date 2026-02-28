@@ -12,9 +12,21 @@ const plugin = {
     version: pkg.version,
     namespace: "separate-type-imports",
   },
+  configs: {},
   rules: {
     "separate-type-imports": separateTypeImports,
   },
 };
+
+// assign configs here so we can reference `plugin`
+Object.assign(plugin.configs, {
+  recommended: [
+    {
+      rules: {
+        "separate-type-imports": "error",
+      },
+    },
+  ],
+});
 
 export default plugin;
