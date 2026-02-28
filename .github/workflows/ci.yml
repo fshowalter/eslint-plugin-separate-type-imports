@@ -32,7 +32,7 @@ jobs:
       - name: knip
         run: npm run knip
 
-  prettier:
+  format:
     runs-on: ubuntu-latest
 
     steps:
