@@ -46,7 +46,8 @@
   },
   "files": [
     "index.js",
-    "separate-type-imports.js"
+    "separate-type-imports.js",
+    "index.d.ts"
   ],
   "types": "index.d.ts"
 }
