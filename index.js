@@ -8,7 +8,9 @@ const pkg = JSON.parse(
 
 const plugin = {
   // preferred location of name and version
-  configs: {},
+  configs: {
+    recommended: [],
+  },
   meta: {
     name: pkg.name,
     namespace: "separate-type-imports",

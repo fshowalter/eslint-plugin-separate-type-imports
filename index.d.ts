@@ -1,6 +1,8 @@
 export default plugin;
 declare namespace plugin {
-  let configs: {};
+  namespace configs {
+    let recommended: import("eslint").Linter.Config;
+  }
   namespace meta {
     let name: any;
     let namespace: string;
