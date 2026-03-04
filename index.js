@@ -9,7 +9,7 @@ const pkg = JSON.parse(
 const plugin = {
   // preferred location of name and version
   configs: {
-    recommended: []
+    recommended: [],
   },
   meta: {
     name: pkg.name,
