@@ -47,5 +47,6 @@
   "files": [
     "index.js",
     "separate-type-imports.js"
-  ]
+  ],
+  "types": "index.d.ts"
 }
