@@ -30,7 +30,7 @@
     "@eslint/js": "10.0.1",
     "@types/estree": "1.0.8",
     "@types/node": "25.6.0",
-    "eslint": "10.2.1",
+    "eslint": "10.3.0",
     "eslint-plugin-eslint-plugin": "7.3.2",
     "eslint-plugin-perfectionist": "5.9.0",
     "eslint-plugin-unicorn": "64.0.0",
