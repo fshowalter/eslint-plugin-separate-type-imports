@@ -10,14 +10,18 @@ export default defineConfig([
   eslintPlugin.configs.recommended,
   eslint.configs.recommended,
   eslintPluginN.configs["flat/recommended-module"],
-  eslintPluginUnicorn.configs.recommended,
+  eslintPluginUnicorn.configs.unopinionated,
   perfectionist.configs["recommended-natural"],
   {
     rules: {
       "unicorn/filename-case": "off",
       "unicorn/no-array-reverse": "off",
       "unicorn/no-nested-ternary": "off",
-      "unicorn/prevent-abbreviations": "off",
+      "unicorn/no-top-level-side-effects": "off",
+      "unicorn/prefer-await": "off",
+      "unicorn/prefer-minimal-ternary": "off",
+      "unicorn/prefer-number-coercion": "off",
+      "unicorn/require-array-sort-compare": "off",
     },
   },
   {
