@@ -39,7 +39,7 @@
     "knip": "6.23.0",
     "prettier": "3.9.3",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.62.0"
+    "typescript-eslint": "8.62.1"
   },
   "peerDependencies": {
     "eslint": "^9.0.0 || ^10.0.0"
