@@ -33,7 +33,7 @@
     "eslint": "10.7.0",
     "eslint-plugin-eslint-plugin": "7.4.2",
     "eslint-plugin-perfectionist": "5.10.0",
-    "eslint-plugin-unicorn": "71.1.0",
+    "eslint-plugin-unicorn": "72.0.0",
     "eslint-plugin-n": "18.2.2",
     "globals": "17.7.0",
     "knip": "6.26.0",
