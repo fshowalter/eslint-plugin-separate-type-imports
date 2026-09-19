@@ -52,10 +52,9 @@ function buildNamedImportsPart(namedImports, hasPrevious) {
 function buildNamedSpecifier(spec) {
   const imported = /** @type {Identifier} */ (spec.imported);
   const local = spec.local;
-  if (imported.name === local.name) {
-    return imported.name;
-  }
-  return `${imported.name} as ${local.name}`;
+  return imported.name === local.name
+    ? imported.name
+    : `${imported.name} as ${local.name}`;
 }
 
 /**
@@ -86,10 +85,9 @@ function formatImportSource(source) {
   // Otherwise, wrap source.value in quotes
   if (typeof source.value === "string") {
     // Check if it already has quotes
-    if (source.value.startsWith('"') || source.value.startsWith("'")) {
-      return source.value;
-    }
-    return `"${source.value}"`;
+    return source.value.startsWith('"') || source.value.startsWith("'")
+      ? source.value
+      : `"${source.value}"`;
   }
 
   // Fallback - shouldn't happen in practice
